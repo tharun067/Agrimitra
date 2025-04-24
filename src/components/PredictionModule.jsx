@@ -11,7 +11,7 @@ function PredictionModule() {
   const [error, setError] = useState(null);
 
   const webcamRef = useRef(null);
-  const API_URL = "http://127.0.0.1:8000";
+  const API_URL = "https://agrimitra-g58j.onrender.com";
 
   const openModal = () => {
     setIsModalOpen(true);
