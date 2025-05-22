@@ -6,7 +6,7 @@ import HistoryPage from '../components/HistoryPage'
 import SettingsPage from '../components/SettingsPage'
 import UserPage from '../components/UserPage'
 import HelpPage from '../components/HelpPage'
-
+import HowItWorksPage from '../components/HowItWorksPage'
 function Dashboard() {
     return (
         <DashboardLayout>
@@ -14,8 +14,9 @@ function Dashboard() {
                 <Route path='/' element={<PredictionModule />} />
                 <Route path='/history' element={<HistoryPage />} />
                 <Route path='/settings' element={<SettingsPage />} />
-                <Route path='/history' element={<UserPage />} />
-                <Route path='/help' element={<HelpPage/>} />
+                <Route path='/profile' element={<UserPage />} />
+                <Route path='/help' element={<HelpPage />} />
+                <Route path='/how-it-works' element={<HowItWorksPage/>} />
             </Routes>
         </DashboardLayout>
     );

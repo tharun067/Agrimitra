@@ -169,35 +169,6 @@ function PredictionModule() {
         </div>
       </div>
 
-      <div className="card p-6 bg-primary-50 border border-primary-100">
-        <h3 className="text-xl font-semibold text-primary-800 mb-4">
-          How It Works
-        </h3>
-        <div className="grid md:grid-cols-3 gap-4">
-          <div className="flex flex-col items-center text-center p-3">
-            <Camera className="h-5 w-5 mb-2 text-primary-600" />
-            <h4 className="font-medium">Take a Photo</h4>
-            <p className="text-sm text-gray-600">
-              Capture the affected part of the plant clearly.
-            </p>
-          </div>
-          <div className="flex flex-col items-center text-center p-3">
-            <Upload className="h-5 w-5 mb-2 text-primary-600" />
-            <h4 className="font-medium">Upload Image</h4>
-            <p className="text-sm text-gray-600">
-              Upload from your device for analysis.
-            </p>
-          </div>
-          <div className="flex flex-col items-center text-center p-3">
-            <AlertTriangle className="h-5 w-5 mb-2 text-primary-600" />
-            <h4 className="font-medium">Get Results</h4>
-            <p className="text-sm text-gray-600">
-              Receive the diagnosis and treatment tips.
-            </p>
-          </div>
-        </div>
-      </div>
-
       {isModalOpen && (
         <div className="fixed inset-0 z-50 overflow-y-auto">
           <div className="flex items-center justify-center min-h-screen px-4">

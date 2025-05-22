@@ -1,5 +1,5 @@
 import { Activity, Leaf, Shield, Users } from 'lucide-react';
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
@@ -16,7 +16,7 @@ function HomePage() {
                             <span className="ml-2 text-2xl font-bold text-primary-800">Agrimitra</span>
                         </div>
                         <div>
-                            { isAuthenticated ? (
+                            {isAuthenticated ? (
                                 <Link to="/dashboard" className="btn-primary">
                                     Dashboard
                                 </Link>

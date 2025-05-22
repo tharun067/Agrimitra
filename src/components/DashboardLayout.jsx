@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Leaf, LogOut, Menu, X, Home, History, Settings2, HelpCircleIcon } from 'lucide-react';
-import { ImProfile } from 'react-icons/im';
+import { Leaf, LogOut, Menu, X, Home, Clock, Settings, HelpCircle, User, Info } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 
@@ -13,10 +12,11 @@ function DashboardLayout({children}) {
 
     const navItems = [
         { name: 'Home', path: '/dashboard', icon: <Home className='w-5 -5' /> },
-        { name: 'History', path: '/dashboard/history', icon: <History className='w-5 -5' /> },
-        { name: 'Settings', path: '/dashboard/settings', icon: <Settings2 className='w-5 -5' /> },
-        { name: 'Profile', path: '/dashboard/profile', icon: <ImProfile className='w-5 -5' /> },
-        { name: 'Help', path: '/dashboard/help', icon: <HelpCircleIcon className='w-5 -5' /> },
+        { name: 'History', path: '/dashboard/history', icon: <Clock className='w-5 -5' /> },
+        { name: 'Settings', path: '/dashboard/settings', icon: <Settings className='w-5 -5' /> },
+        { name: 'Profile', path: '/dashboard/profile', icon: <User className='w-5 -5' /> },
+        { name: 'Help', path: '/dashboard/help', icon: <HelpCircle className='w-5 -5' /> },
+        { name: 'How It Works', path: '/dashboard/how-it-works', icon: <Info className='w-5 -5' /> },
     ];
 
     const isActive = (path) => {
