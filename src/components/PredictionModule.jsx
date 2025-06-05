@@ -94,6 +94,7 @@ function PredictionModule() {
       });
     } catch (err) {
       setError(err.message || "Prediction failed. Try again.");
+      console.error("prediction error", err);
     } finally {
       setIsLoading(false);
     }

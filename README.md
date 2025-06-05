@@ -1,3 +1,6 @@
+> <span style="color:red"><strong>⚠️ ALERT:</strong> Due to limited usage of the website, the backend may not respond consistently. On some occasions, there may be noticeable delays in receiving results.</span>
+
+
 # Installation
 
 ## Prerequisites
